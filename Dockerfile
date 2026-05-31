@@ -1,4 +1,4 @@
-FROM node:20-bullseye
+FROM node:22-bullseye
 
 RUN apt-get update && apt-get install -y \
     ffmpeg \
@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 COPY package*.json ./
+
 RUN npm install
 
 COPY . .
