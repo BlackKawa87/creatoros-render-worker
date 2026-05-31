@@ -1,11 +1,15 @@
 {
   "name": "creatoros-render-worker",
   "version": "1.0.0",
+  "description": "CreatorOS FFmpeg render worker",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "@supabase/supabase-js": "^2.45.4",
+    "axios": "^1.7.7",
+    "express": "^4.19.2",
+    "uuid": "^10.0.0"
   }
 }
